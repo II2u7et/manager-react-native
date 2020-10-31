@@ -68,7 +68,6 @@ class LoginForm extends Component {
                 {this.renderError()}
 
                 <CardSection>
-                    
                     {this.renderButton()}
                 </CardSection>
             </Card>
