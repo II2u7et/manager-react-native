@@ -22,7 +22,6 @@ class EmmployeeList extends Component {
     }
 
     render() {
-        console.log(this.props.employees)
         return (
             <View>
                <FlatList 
@@ -37,12 +36,9 @@ class EmmployeeList extends Component {
 
 const mapSateToProps = state => {
 
-
     const employees = _.map(state.employees, (val, uid) => {
         return{ ...val, uid}
     })
-
-    console.log({employees})
 
     return {employees}
 }
